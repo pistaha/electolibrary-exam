@@ -157,6 +157,12 @@ Frontend: <http://localhost:3000>
 Backend: <http://localhost:8000>  
 Swagger: <http://localhost:8000/docs>
 
+Если порт `8000` занят, внешний порт можно изменить без правки файла:
+
+```bash
+FRONTEND_PORT=3099 BACKEND_PORT=8001 docker compose up
+```
+
 Остановка:
 
 ```bash
